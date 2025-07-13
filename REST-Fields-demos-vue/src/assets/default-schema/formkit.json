@@ -1,0 +1,76 @@
+{
+  "$formkit": "repeater",
+  "name": "destinations",
+  "label": "Destinations",
+  "children": [
+    {
+      "$formkit": "text",
+      "name": "identifier",
+      "label": "Identifier",
+      "validation": "required"
+    },
+    {
+      "$formkit": "group",
+      "name": "translation",
+      "label": "Translations",
+      "children": [
+        {
+          "$formkit": "text",
+          "name": "et",
+          "label": "Estonian",
+          "validation": "required"
+        },
+        {
+          "$formkit": "text",
+          "name": "ru",
+          "label": "Russian",
+          "validation": "required"
+        },
+        {
+          "$formkit": "text",
+          "name": "en",
+          "label": "English",
+          "validation": "required"
+        }
+      ]
+    },
+    {
+      "$formkit": "repeater",
+      "name": "children",
+      "label": "Children",
+      "children": [
+        {
+          "$formkit": "text",
+          "name": "identifier",
+          "label": "Identifier",
+          "validation": "required"
+        },
+        {
+          "$formkit": "group",
+          "name": "translation",
+          "label": "Translations",
+          "children": [
+            {
+              "$formkit": "text",
+              "name": "et",
+              "label": "Estonian",
+              "validation": "required"
+            },
+            {
+              "$formkit": "text",
+              "name": "ru",
+              "label": "Russian",
+              "validation": "required"
+            },
+            {
+              "$formkit": "text",
+              "name": "en",
+              "label": "English",
+              "validation": "required"
+            }
+          ]
+        }
+      ]
+    }    
+  ]
+}

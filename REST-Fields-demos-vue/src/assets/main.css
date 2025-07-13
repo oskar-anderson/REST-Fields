@@ -1,0 +1,35 @@
+@import './base.css';
+@import "./details.css";
+@import "tailwindcss";
+/* @import "tailwindcss/utilities.css"; */
+
+:root {
+  --btn-primary-clr-surface: hsl(16, 100%, 61%);
+  --btn-primary-clr-text: #fff;
+  --btn-primary-clr-surface-hover: hsl(16, 100%, 51%);
+  --btn-primary-clr-text-hover: #fff;
+}
+
+#app {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+
+.jf-btn {
+  padding: 6px 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.jf-btn-primary {
+  background: var(--btn-primary-clr-surface);
+  color: var(--btn-primary-clr-text)
+}
+
+.jf-btn-primary:hover {
+  background: var(--btn-primary-clr-surface-hover);
+  color: var(--btn-primary-clr-text-hover)
+}

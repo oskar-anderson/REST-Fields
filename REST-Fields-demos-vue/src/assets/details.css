@@ -1,0 +1,62 @@
+details:first-of-type {
+    margin-top: 0;
+}
+
+details {
+    background: rgb(236 243 251);
+    border-radius: .5rem;
+    margin-top: .5rem;
+}
+
+summary {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    cursor: pointer;
+    /* position the marker */
+    display: flex;
+    align-items: center;
+}
+
+summary::marker {
+    content: none;
+}
+
+summary::after {
+    content: '';
+    background: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none'><path d='M8 5L15.57 11.6237C15.7976 11.8229 15.7976 12.1771 15.57 12.3763L8 19' stroke='hsl(213, 100%, 26%)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    margin-left: auto;
+    transition: rotate .25s;
+    rotate: 90deg;
+}
+
+details[open] summary::after {
+    rotate: 270deg;
+}
+
+details>*:nth-child(2) {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    padding-bottom: 1rem;
+}
+
+
+/* Make details animate */
+details {
+    interpolate-size: allow-keywords;
+}
+
+details::details-content {
+    height: 0;
+    transition: height .25s, content-visibility .25s;
+    transition-behavior: allow-discrete;
+    overflow: hidden;
+}
+
+details[open]::details-content {
+    height: auto;
+}

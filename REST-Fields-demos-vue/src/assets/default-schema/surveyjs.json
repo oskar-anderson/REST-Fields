@@ -1,0 +1,56 @@
+{
+  "title": "Destinations",
+  "elements": [
+    {
+      "type": "paneldynamic",
+      "name": "destinations",
+      "title": "Destinations",
+      "templateTitle": "Destination #{panelIndex}",
+      "renderMode": "list",
+      "minPanelCount": 1,
+      "templateElements": [
+        {
+          "type": "text",
+          "name": "identifier",
+          "title": "Identifier",
+          "isRequired": true
+        },
+        {
+          "type": "multipletext",
+          "name": "translation",
+          "title": "Translations",
+          "items": [
+            { "name": "et", "title": "Estonian", "isRequired": true },
+            { "name": "ru", "title": "Russian", "isRequired": true },
+            { "name": "en", "title": "English", "isRequired": true }
+          ]
+        },
+        {
+          "type": "paneldynamic",
+          "name": "children",
+          "title": "Children",
+          "templateTitle": "Child #{panelIndex}",
+          "renderMode": "list",
+          "templateElements": [
+            {
+              "type": "text",
+              "name": "identifier",
+              "title": "Identifier",
+              "isRequired": true
+            },
+            {
+              "type": "multipletext",
+              "name": "translation",
+              "title": "Translations",
+              "items": [
+                { "name": "et", "title": "Estonian", "isRequired": true },
+                { "name": "ru", "title": "Russian", "isRequired": true },
+                { "name": "en", "title": "English", "isRequired": true }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
