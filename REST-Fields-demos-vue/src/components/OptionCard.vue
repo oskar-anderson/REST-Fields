@@ -12,7 +12,7 @@ defineProps({
     </div>
 </template>
 
-<style>
+<style scoped>
 .card {
     padding: 32px;
     background-color: hsl(212, 100%, 97%);

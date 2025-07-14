@@ -1,4 +1,17 @@
-# JsonForms
+# Vue demos
+
+## Results
+
+### Formio
+Difficult to work with:
+* difficult to get started - v4 and v5 CDNs resolve differently, nuanced npm import `import { Formio } from 'formiojs'` vs `import Formio from 'formiojs'` and typescript problems
+* leans heavily into enterprise SaaS and not library code
+* styling problems - could not replicate same style as in documentation sample like no "mb-2", uses old Bootstrap 4, requires removing Tailwind preflight
+* undesired workflow - save/edit instead of two-way binding, does not initialize in open state (Add another button)
+
+
+### SurveyJS
+
 
 This template should help get you started developing with Vue 3 in Vite.
 

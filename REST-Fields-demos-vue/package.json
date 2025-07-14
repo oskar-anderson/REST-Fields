@@ -1,5 +1,5 @@
 {
-  "name": "jsonforms",
+  "name": "rest-fields",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -15,8 +15,8 @@
     "@formkit/pro": "^0.127.23",
     "@formkit/vue": "^1.6.9",
     "@guolao/vue-monaco-editor": "^1.5.5",
+    "@json-editor/json-editor": "^2.15.2",
     "@tailwindcss/vite": "^4.1.7",
-    "formiojs": "^4.21.6",
     "highlight.js": "^11.11.1",
     "highlightjs-copy": "^1.0.6",
     "prismjs": "^1.30.0",

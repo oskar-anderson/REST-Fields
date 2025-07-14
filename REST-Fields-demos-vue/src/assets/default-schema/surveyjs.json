@@ -1,12 +1,11 @@
 {
-  "title": "Destinations",
   "elements": [
     {
       "type": "paneldynamic",
       "name": "destinations",
       "title": "Destinations",
       "templateTitle": "Destination #{panelIndex}",
-      "renderMode": "list",
+      "displayMode": "list",
       "minPanelCount": 1,
       "templateElements": [
         {
@@ -30,7 +29,7 @@
           "name": "children",
           "title": "Children",
           "templateTitle": "Child #{panelIndex}",
-          "renderMode": "list",
+          "displayMode": "tab",
           "templateElements": [
             {
               "type": "text",
