@@ -12,6 +12,15 @@ Difficult to work with:
 
 ### SurveyJS
 
+### FormKit
+
+### JsonForms
+Painpoints:
+
+* Build contains bugs (vite path resolution)
+* Styling problems (Vuetify, MDI icons)
+* No schema nesting 
+
 
 This template should help get you started developing with Vue 3 in Vite.
 

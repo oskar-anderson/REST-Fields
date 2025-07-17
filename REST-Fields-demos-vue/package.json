@@ -16,6 +16,8 @@
     "@formkit/vue": "^1.6.9",
     "@guolao/vue-monaco-editor": "^1.5.5",
     "@json-editor/json-editor": "^2.15.2",
+    "@jsonforms/vue-vuetify": "^3.6.0",
+    "@mdi/font": "^7.4.47",
     "@tailwindcss/vite": "^4.1.7",
     "highlight.js": "^11.11.1",
     "highlightjs-copy": "^1.0.6",

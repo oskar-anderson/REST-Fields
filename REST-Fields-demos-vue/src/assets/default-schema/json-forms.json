@@ -1,0 +1,64 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Destinations",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "title": "Destination",
+    "properties": {
+      "identifier": {
+        "type": "string",
+        "default": ""
+      },
+      "translation": {
+        "type": "object",
+        "properties": {
+          "et": { "type": "string" },
+          "ru": { "type": "string" },
+          "en": { "type": "string" }
+        },
+        "required": ["et", "ru", "en"],
+        "default": {
+          "et": "",
+          "ru": "",
+          "en": ""
+        },
+        "additionalProperties": false
+      },
+      "children": {
+        "type": "array",
+        "title": "Sub-destinations",
+        "items": {
+          "type": "object",
+          "title": "Sub Destination",
+          "properties": {
+            "identifier": {
+              "type": "string",
+              "default": ""
+            },
+            "translation": {
+              "type": "object",
+              "properties": {
+                "et": { "type": "string" },
+                "ru": { "type": "string" },
+                "en": { "type": "string" }
+              },
+              "required": ["et", "ru", "en"],
+              "default": {
+                "et": "",
+                "ru": "",
+                "en": ""
+              },
+              "additionalProperties": false
+            }
+          },
+          "required": ["identifier", "translation"],
+          "additionalProperties": false
+        },
+        "default": []
+      }
+    },
+    "required": ["identifier", "translation", "children"],
+    "additionalProperties": false
+  }
+}

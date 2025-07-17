@@ -1,0 +1,43 @@
+{
+  "type": "ListWithDetail",
+  "scope": "#",
+  "label": "Destinations",
+  "options": {
+    "detail": {
+      "type": "VerticalLayout",
+      "elements": [
+        {
+          "type": "Control",
+          "label": "Identifier",
+          "scope": "#/properties/identifier"
+        },
+        {
+          "type": "Group",
+          "label": "Translations",
+          "elements": [
+            {
+              "type": "Control",
+              "label": "Estonian",
+              "scope": "#/properties/translation/properties/et"
+            },
+            {
+              "type": "Control",
+              "label": "Russian",
+              "scope": "#/properties/translation/properties/ru"
+            },
+            {
+              "type": "Control",
+              "label": "English",
+              "scope": "#/properties/translation/properties/en"
+            }
+          ]
+        },
+        {
+          "type": "Control",
+          "label": "Children",
+          "scope": "#/properties/children"
+        }
+      ]
+    }
+  }
+}
